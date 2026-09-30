@@ -1,0 +1,16 @@
+{
+  "name": "tmh-agent-spike",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Scheduling agent spike: durable multi-party workflows, authority levels enforced in code, operator isolation, audit trail.",
+  "scripts": {
+    "test": "node --test tests/agent.test.mjs",
+    "scenarios": "node scripts/scenarios.mjs",
+    "start": "npx --yes serve . -l 3000",
+    "deploy": "npx --yes vercel --prod"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
